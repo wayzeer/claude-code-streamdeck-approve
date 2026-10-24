@@ -1,0 +1,60 @@
+{
+	"Name": "Claude Code Approve",
+	"Version": "1.0.0.0",
+	"Author": "wayzeer",
+	"Actions": [
+		{
+			"Name": "Approve",
+			"UUID": "com.wayzeer.claude-approve.approve",
+			"Icon": "imgs/actions/approve/icon",
+			"Tooltip": "Shows the oldest waiting Claude Code permission request. Press to approve it.",
+			"Controllers": [
+				"Keypad"
+			],
+			"SupportedInMultiActions": false,
+			"States": [
+				{
+					"Image": "imgs/actions/approve/key"
+				}
+			]
+		},
+		{
+			"Name": "Deny",
+			"UUID": "com.wayzeer.claude-approve.deny",
+			"Icon": "imgs/actions/deny/icon",
+			"Tooltip": "Shows the oldest waiting Claude Code permission request. Press to deny it.",
+			"Controllers": [
+				"Keypad"
+			],
+			"SupportedInMultiActions": false,
+			"States": [
+				{
+					"Image": "imgs/actions/deny/key"
+				}
+			]
+		}
+	],
+	"Category": "Claude Code Approve",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Approve or deny Claude Code permission prompts from your Stream Deck.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		},
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		}
+	],
+	"Nodejs": {
+		"Version": "24"
+	},
+	"UUID": "com.wayzeer.claude-approve"
+}
